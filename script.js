@@ -1,5 +1,5 @@
 'use strict';
-let man = {
+/*let man = {
     age: 33,
     name: "John",
     isMarried: false
@@ -17,4 +17,26 @@ let isCheked = true,
     isClose  = false;
     console.log(isCheked && !isClose);
     
-    console.log("2"===2);
+    console.log("2"==2);*/
+
+    let num = 65;
+
+    if(num<20) {
+        console.log("Неверно!");
+    } else {
+        console.log("Верно!");
+    }
+
+    (num=65) ? console.log("Верно!") : console.log("Неверно!");
+
+    switch(num) {
+        case num<32: 
+            console.log("Неверно!")
+            Break;
+        case 65:
+            console.log("Верно!");
+            break;
+        default:
+            console.log("Проверьте условие!");
+            break;
+    }
