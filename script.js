@@ -45,7 +45,7 @@ let isCheked = true,
     //     console.log(num);
     //     num++;
     // }
-    let num = 65;
+    //let num = 65;
      do {
          console.log(num);
          num++;
@@ -124,3 +124,40 @@ for(let key in squere){
     console.log("Параметр объекта" + key + " имеет знаение " +squere[key]);
 }
 console.log(Object.keys(squere).length);
+
+
+let arr = [65,213,12454,145,78698,2435];
+    arr.shift();
+    arr.pop();
+    arr.unshift("First")
+    arr.push("Last");
+    ans = arr.length;
+    console.log(ans);
+    console.log(arr);
+
+arr.forEach(function(item, i, mass){
+    console.log(i+" : " + item + " (значение массива: " + mass+ ')');
+})
+
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+let mass = [1, 2, 3, 4, 5, 6, 70]
+
+for(let key of mass){
+    console.log(key);
+}
+
+let answ = prompt('', '');
+    arr = [];
+    arr = answ.split(',')
+
+console.log(arr);
+
+let str = [24, 34, 23, 23, 54, 64,];
+     arw = str.sort(function(a,b){
+         return a-b;
+     })
+    
+console.log(arw);
